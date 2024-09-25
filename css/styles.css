@@ -1,17 +1,17 @@
 @import url(`https://fonts.google.com/specimen/Poppins?query=Poppins`);
 
-:root{
+:root {
     --primary-color: #b69058;
     --background-color: #dfd0c1;
     --dark-color: #151515;
 }
 
-html{
+html {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,18 +19,18 @@ html{
 
 /* UTILIDADES */
 
-.container{
+.container {
     max-width: 120rem;
     margin: 0 auto;
 }
 
-.heading-1{
+.heading-1 {
     font-size: 2rem;
     text-align: center;
     padding-top: 2rem;
 }
 
-.container-logo{
+.container-logo {
     background-color: var(--background-color);
     display: flex;
     align-items: center;
@@ -38,47 +38,47 @@ html{
     height: 5.5rem;
 }
 
-.container-logo i{
+.container-logo i {
     font-size: 1.8rem;
 }
 
-.container-logo a{
+.container-logo a {
     text-decoration: none;
     color: black;
 }
 
-.container-pedido{
+.container-pedido {
     display: flex;
     gap: rem;
     cursor: pointer;
 }
 
-.container-navbar{
+.container-navbar {
     position: relative;
     background-color: var(--primary-color);
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
 }
 
-.navbar .fa-bars{
+.navbar .fa-bars {
     display: none;
 }
 
-.menu{
+.menu {
     display: flex;
     gap: 2rem;
 }
 
-.menu li{
+.menu li {
     list-style: none;
 }
 
-.menu a{
+.menu a {
     text-decoration: none;
     font-size: 1.2rem;
     color: var(--dark-color);
@@ -87,15 +87,15 @@ html{
     position: relative;
 }
 
-.menu a:hover::after{
+.menu a:hover::after {
     opacity: 1;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: white
 }
 
-.banner{
+.banner {
     background-image: linear-gradient(120deg, #00000085, #00000020), url('imagenes/brownies.jpg');
     height: 70rem;
     background-size: 100% 100%;
@@ -103,27 +103,27 @@ html{
     background-position: center;
 }
 
-.content-banner{
+.content-banner {
     max-width: 90rem;
     margin: 0 auto;
     padding: 25rem 0;
 }
 
-.content-banner p{
+.content-banner p {
     color: var(--primary-color);
     font-size: 1.2rem;
     margin-bottom: 1rem;
     font-weight: 500;
 }
 
-.content-banner h2{
+.content-banner h2 {
     color: white;
     font-size: 3.5rem;
     font-weight: 500;
     line-height: 1.2;
 }
 
-.content-banner a{
+.content-banner a {
     margin-top: 2rem;
     text-decoration: none;
     color: white;
@@ -134,26 +134,30 @@ html{
     border-radius: 3rem;
 }
 
-.main-content{
+.main-content {
     background-color: var(--background-color);
 }
 
 /* MAS VENDIDOS */
 
-.top-products{
+.top-products {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin-bottom: 3rem;
 }
 
-.container-products{
+.container-products {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 3rem;
 }
 
-.card-product{
+.container-products a {
+    text-decoration: none;
+}
+
+.card-product {
     height: 20rem;
     display: flex;
     flex-direction: column;
@@ -163,7 +167,7 @@ html{
     gap: 2rem;
 }
 
-.product-milanesaPure{
+.product-milanesaPure {
     background-image: linear-gradient(120deg, #0000009f, #5b5b5b20), url('imagenes/milanesaConPure.jpg');
     height: 30rem;
     background-size: 100% 100%;
@@ -171,7 +175,7 @@ html{
     background-position: center;
 }
 
-.product-papasTriple{
+.product-papasTriple {
     background-image: linear-gradient(120deg, #0000009f, #5b5b5b20), url('imagenes/papasTripleCoccion.jpg');
     height: 30rem;
     background-size: 100% 100%;
@@ -179,7 +183,7 @@ html{
     background-position: center;
 }
 
-.product-hamburguesaPapas{
+.product-hamburguesaPapas {
     background-image: linear-gradient(120deg, #0000009f, #5b5b5b20), url('imagenes/hamburguesaConPapas.jpg');
     height: 30rem;
     background-size: 100% 100%;
@@ -187,14 +191,14 @@ html{
     background-position: center;
 }
 
-.card-product p{
+.card-product p {
     font-size: 2rem;
     color: white;
     text-transform: capitalize;
     position: relative;
 }
 
-.card-product p::after{
+.card-product p::after {
     content: '';
     width: 2.5rem;
     height: 2px;
@@ -205,7 +209,7 @@ html{
     transform: translate(-50%, 50%);
 }
 
-.card-product span{
+.card-product span {
     font-size: 1.3rem;
     color: white;
     cursor: pointer;
@@ -213,36 +217,41 @@ html{
 
 /* NUEVOS PRODUCTOS */
 
-.new-products{
+.new-products {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin-bottom: 3rem;
 }
 
-.container-new{
+.container-new {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 3rem;
 }
 
-.card-new{
+.container-new a{
+    text-decoration: none;
+    color: #000;
+}
+
+.card-new {
     background-color: #ebe2d9;
     padding: 2rem 3rem;
     border-radius: .5rem;
     cursor: pointer;
-    box-shadow: 0 0 .2px rgba(0,0,0,0.1);
+    box-shadow: 0 0 .2px rgba(0, 0, 0, 0.1);
 }
 
-.container-img{
+.container-img {
     position: relative;
 }
 
-.container-img img{
+.container-img img {
     width: 100%;
 }
 
-.button-group{
+.button-group {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -254,7 +263,11 @@ html{
     transition: all .4s ease;
 }
 
-.button-group span{
+.button-group a {
+    text-decoration: none;
+}
+
+.button-group span {
     border: 1px solid var(--primary-color);
     padding: .8rem;
     background-color: var(--background-color);
@@ -267,16 +280,16 @@ html{
     transition: all .4s ease;
 }
 
-.button-group span:hover{
+.button-group span:hover {
     background-color: var(--primary-color);
 }
 
-.card-new:hover .button-group{
+.card-new:hover .button-group {
     z-index: 0;
     right: -1rem;
 }
 
-.content-card-product{
+.content-card-product {
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
@@ -284,7 +297,7 @@ html{
     row-gap: 1rem;
 }
 
-.content-card-product h3{
+.content-card-product h3 {
     align-self: center;
     grid-row: 1/2;
     grid-column: 1/-1;
@@ -294,11 +307,11 @@ html{
     cursor: pointer;
 }
 
-.content-card-product h3:hover{
+.content-card-product h3:hover {
     color: var(--primary-color)
 }
 
-.add-cart{
+.add-cart {
     justify-self: start;
     border: 2px solid var(--primary-color);
     padding: 1rem;
@@ -310,27 +323,27 @@ html{
     justify-content: center;
 }
 
-.add-cart:hover{
+.add-cart:hover {
     background-color: var(--primary-color);
 }
 
-.add-cart i{
+.add-cart i {
     font-size: 1.5rem;
     color: var(--primary-color)
 }
 
-.add-cart i:hover{
+.add-cart i:hover {
     color: white;
 }
 
-.content-card-product .price{
+.content-card-product .price {
     justify-self: end;
     align-self: center;
     font-size: 1.6rem;
     font-weight: 600;
 }
 
-.content-card-product .price span{
+.content-card-product .price span {
     font-size: 1.5rem;
     font-weight: 400;
     text-decoration: line-through;
@@ -345,7 +358,8 @@ footer {
     text-align: center;
 }
 
-footer p, li {
+footer p,
+li {
     color: #000;
     font-size: 1.2rem;
 }
@@ -357,7 +371,8 @@ footer p, li {
     border-collapse: collapse;
 }
 
-.table-recipes th, .table-recipes td {
+.table-recipes th,
+.table-recipes td {
     padding: 1rem;
     text-align: left;
     border-bottom: 1px solid var(--dark-color);
@@ -374,15 +389,15 @@ footer p, li {
     color: white;
 }
 
-.table-nombre{
+.table-nombre {
     font-size: 1.3rem;
 }
 
-.table-descripcion{
+.table-descripcion {
     font-size: 1.1rem;
 }
 
-.container-img{
+.container-img {
     text-align: center;
 }
 
@@ -489,24 +504,29 @@ footer p, li {
 
 @media (max-width: 768px) {
     .container-logo {
-        justify-content: center; /* Centra el logo horizontalmente */
-        text-align: center; /* Centra el texto dentro del contenedor */
+        justify-content: center;
+        /* Centra el logo horizontalmente */
+        text-align: center;
+        /* Centra el texto dentro del contenedor */
     }
 
     .container-logo i {
-        font-size: 2.5rem; /* Puedes ajustar el tamaño del ícono si lo deseas */
+        font-size: 2.5rem;
+        /* Puedes ajustar el tamaño del ícono si lo deseas */
     }
 
     .logo a {
-        font-size: 2rem; /* Ajusta el tamaño del texto si es necesario */
+        font-size: 2rem;
+        /* Ajusta el tamaño del texto si es necesario */
     }
 
-    .navbar .fa-bars{
+    .navbar .fa-bars {
         display: grid;
     }
 
     .menu {
-        opacity: 0; /* El menú estará oculto inicialmente en móviles */
+        opacity: 0;
+        /* El menú estará oculto inicialmente en móviles */
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -523,10 +543,11 @@ footer p, li {
     .menu-active {
         opacity: 1;
         transform: translateY(0);
-      }
+    }
 
     .menu.show {
-        display: flex; /* Mostramos el menú cuando se active con JavaScript */
+        display: flex;
+        /* Mostramos el menú cuando se active con JavaScript */
     }
 
     #menu-hamburguesa {
@@ -543,6 +564,7 @@ footer p, li {
         flex: 1 1 100%;
     }
 }
+
 /* UTILIDADES FORMULARIO */
 .form-container {
     max-width: 600px;
@@ -550,28 +572,34 @@ footer p, li {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .form-container h2 {
     text-align: center;
     margin-bottom: 20px;
 }
+
 .form-group {
     margin-bottom: 15px;
 }
+
 .form-group label {
     display: block;
     margin-bottom: 5px;
 }
-.form-group input, 
+
+.form-group input,
 .form-group select {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
 }
+
 .form-group select {
     height: 40px;
 }
+
 .form-group textarea {
     width: 100%;
     padding: 8px;
@@ -579,6 +607,7 @@ footer p, li {
     box-sizing: border-box;
     resize: none;
 }
+
 .form-group button {
     width: 100%;
     padding: 10px;
@@ -588,6 +617,7 @@ footer p, li {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .form-group button:hover {
     background-color: #45a049;
 }
