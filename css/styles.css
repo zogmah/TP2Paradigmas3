@@ -1,0 +1,572 @@
+@import url(`https://fonts.google.com/specimen/Poppins?query=Poppins`);
+
+:root{
+    --primary-color: #b69058;
+    --background-color: #dfd0c1;
+    --dark-color: #151515;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* UTILIDADES */
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.heading-1{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.container-logo{
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.container-logo i{
+    font-size: 1.8rem;
+}
+
+.container-logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.container-pedido{
+    display: flex;
+    gap: rem;
+    cursor: pointer;
+}
+
+.container-navbar{
+    position: relative;
+    background-color: var(--primary-color);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.navbar .fa-bars{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    gap: 2rem;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--dark-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu a:hover::after{
+    opacity: 1;
+}
+
+.menu a:hover{
+    color: white
+}
+
+.banner{
+    background-image: linear-gradient(120deg, #000000, #00000020), url('C:/Users/zebam/OneDrive/Escritorio/Code/Paradigmas3/proyectoPagina/imagenes/sangucheDeMortadela.jpg');
+    height: 70rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-banner{
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 25rem 0;
+}
+
+.content-banner p{
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.content-banner h2{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.content-banner a{
+    margin-top: 2rem;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+}
+
+.main-content{
+    background-color: var(--background-color);
+}
+
+/* MAS VENDIDOS */
+
+.top-products{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.container-products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+    gap: 3rem;
+}
+
+.card-product{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    gap: 2rem;
+}
+
+.product-milanesaPure{
+    background-image: linear-gradient(120deg, #000, #5b5b5b20), url('C:/Users/zebam/OneDrive/Escritorio/Code/Paradigmas3/proyectoPagina/imagenes/milanesaConPure.jpg');
+    height: 30rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-papasTriple{
+    background-image: linear-gradient(120deg, #000, #5b5b5b20), url('C:/Users/zebam/OneDrive/Escritorio/Code/Paradigmas3/proyectoPagina/imagenes/papasTripleCoccion.jpg');
+    height: 30rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-hamburguesaPapas{
+    background-image: linear-gradient(120deg, #000, #5b5b5b20), url('C:/Users/zebam/OneDrive/Escritorio/Code/Paradigmas3/proyectoPagina/imagenes/hamburguesaConPapas.jpg');
+    height: 30rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-product p{
+    font-size: 2rem;
+    color: white;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.card-product p::after{
+    content: '';
+    width: 2.5rem;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.card-product span{
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* NUEVOS PRODUCTOS */
+
+.new-products{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.container-new{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 3rem;
+}
+
+.card-new{
+    background-color: #ebe2d9;
+    padding: 2rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    box-shadow: 0 0 .2px rgba(0,0,0,0.1);
+}
+
+.container-img{
+    position: relative;
+}
+
+.container-img img{
+    width: 100%;
+}
+
+.button-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    position: absolute;
+    top: 0;
+    right: -3rem;
+    z-index: -1;
+    transition: all .4s ease;
+}
+
+.button-group span{
+    border: 1px solid var(--primary-color);
+    padding: .8rem;
+    background-color: var(--background-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.button-group span:hover{
+    background-color: var(--primary-color);
+}
+
+.card-new:hover .button-group{
+    z-index: 0;
+    right: -1rem;
+}
+
+.content-card-product{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, min-content);
+    row-gap: 1rem;
+}
+
+.content-card-product h3{
+    align-self: center;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.content-card-product h3:hover{
+    color: var(--primary-color)
+}
+
+.add-cart{
+    justify-self: start;
+    border: 2px solid var(--primary-color);
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all .4s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-cart:hover{
+    background-color: var(--primary-color);
+}
+
+.add-cart i{
+    font-size: 1.5rem;
+    color: var(--primary-color)
+}
+
+.add-cart i:hover{
+    color: white;
+}
+
+.content-card-product .price{
+    justify-self: end;
+    align-self: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.content-card-product .price span{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-left: .5rem;
+}
+
+/* ESTILOS PARA RECETAS SALADAS */
+.table-recipes {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+}
+
+.table-recipes th, .table-recipes td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--dark-color);
+}
+
+.table-recipes th {
+    background-color: var(--primary-color);
+    color: white;
+    text-transform: uppercase;
+}
+
+.table-recipes tr:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.table-nombre{
+    font-size: 1.3rem;
+}
+
+.table-descripcion{
+    font-size: 1.1rem;
+}
+
+.container-img{
+    text-align: center;
+}
+
+/* ESTILOS PARA RECETAS DULCES */
+
+.container-new {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.card-new {
+    background-color: var(--background-color);
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card-new:hover {
+    transform: scale(1.05);
+}
+
+.card-new img {
+    width: 100%;
+    height: auto;
+    border-radius: .5rem;
+}
+
+.content-card-product h3 {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    color: var(--dark-color);
+}
+
+/* ESTILOS DE LOS PRODUCTOS*/
+
+.recipe-detail {
+    padding: 2rem 0;
+}
+
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.recipe-image {
+    flex: 1 1 400px;
+    max-width: 500px;
+}
+
+.recipe-image img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.recipe-info {
+    flex: 2 1 600px;
+}
+
+.recipe-info h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.recipe-info p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.recipe-info ul,
+.recipe-info ol {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.recipe-info li {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.button-pedir {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    transition: background-color 0.3s;
+}
+
+.button-back:hover {
+    background-color: #a6784c;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .container-logo {
+        justify-content: center; /* Centra el logo horizontalmente */
+        text-align: center; /* Centra el texto dentro del contenedor */
+    }
+
+    .container-logo i {
+        font-size: 2.5rem; /* Puedes ajustar el tamaño del ícono si lo deseas */
+    }
+
+    .logo a {
+        font-size: 2rem; /* Ajusta el tamaño del texto si es necesario */
+    }
+
+    .navbar .fa-bars{
+        display: grid;
+    }
+
+    .menu {
+        display: none; /* El menú estará oculto inicialmente en móviles */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 1rem 0;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu.show {
+        display: flex; /* Mostramos el menú cuando se active con JavaScript */
+    }
+
+    #menu-hamburguesa {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .recipe-container {
+        flex-direction: column;
+    }
+
+    .recipe-image,
+    .recipe-info {
+        flex: 1 1 100%;
+    }
+}
+/* UTILIDADES FORMULARIO */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.form-group select {
+    height: 40px;
+}
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    height: 80px;
+    box-sizing: border-box;
+    resize: none;
+}
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background-color: #45a049;
+}
