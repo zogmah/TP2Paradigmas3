@@ -96,7 +96,7 @@ html{
 }
 
 .banner{
-    background-image: linear-gradient(120deg, #00000085, #00000020), url('C:/Users/zebam/OneDrive/Escritorio/Code/Paradigmas3/proyectoPagina/imagenes/brownies.jpg');
+    background-image: linear-gradient(120deg, #00000085, #00000020), url('imagenes/brownies.jpg');
     height: 70rem;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -164,7 +164,7 @@ html{
 }
 
 .product-milanesaPure{
-    background-image: linear-gradient(120deg, #0000009f, #5b5b5b20), url('C:/Users/zebam/OneDrive/Escritorio/Code/Paradigmas3/proyectoPagina/imagenes/milanesaConPure.jpg');
+    background-image: linear-gradient(120deg, #0000009f, #5b5b5b20), url('imagenes/milanesaConPure.jpg');
     height: 30rem;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -172,7 +172,7 @@ html{
 }
 
 .product-papasTriple{
-    background-image: linear-gradient(120deg, #0000009f, #5b5b5b20), url('C:/Users/zebam/OneDrive/Escritorio/Code/Paradigmas3/proyectoPagina/imagenes/papasTripleCoccion.jpg');
+    background-image: linear-gradient(120deg, #0000009f, #5b5b5b20), url('imagenes/papasTripleCoccion.jpg');
     height: 30rem;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -180,7 +180,7 @@ html{
 }
 
 .product-hamburguesaPapas{
-    background-image: linear-gradient(120deg, #0000009f, #5b5b5b20), url('C:/Users/zebam/OneDrive/Escritorio/Code/Paradigmas3/proyectoPagina/imagenes/hamburguesaConPapas.jpg');
+    background-image: linear-gradient(120deg, #0000009f, #5b5b5b20), url('imagenes/hamburguesaConPapas.jpg');
     height: 30rem;
     background-size: 100% 100%;
     background-repeat: no-repeat;
